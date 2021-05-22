@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date</title>
+</head>
+<body>
+
+<p id="d1"></p>
+<p id="d2"></p>
+<p id="d3"></p>
+<p id="d4"></p>
+<p id="d5"></p>
+<p id="d6"></p>
+<p id="d7"></p>
+<p id="d8"></p>
+<p id="d9"></p>
+
+
+<script type="text/javascript">
+	var d=new Date(),d2 = new Date(2018, 11, 24, 10, 33, 30, 5),d3 = new Date("October 13, 2014 11:13:00"),d4=new Date("2015-03-25"),d5=Date.parse("Mar 25 2015"),d6=new Date(d5), d7=d.getTime();
+
+	document.getElementById('d1').innerHTML="Today is: "+d;
+	document.getElementById('d2').innerHTML="Previous: "+d2;
+	document.getElementById('d3').innerHTML="Previous: "+d3;
+	document.getElementById('d4').innerHTML="Previous: "+d4;
+	document.getElementById('d5').innerHTML="Miliseconds: "+d5;
+	document.getElementById('d6').innerHTML="Previous: "+d6;
+	document.getElementById('d7').innerHTML="Get Date: "+d7;
+
+
+
+	//alert(d.toDateString());
+</script>
+
+
+
+</body>
+</html>

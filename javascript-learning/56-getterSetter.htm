@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>Getter Setter</title></head>
+<body>
+
+<h2>JavaScript Class Gettter/Setter</h2>
+
+<p>Using an underscore character is common practice when using getters/setters in JavaScript, but not mandatory, you can name them anything you like, but not the same as the property name.</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(brand) {
+    this.name = brand;
+  }
+
+  get prop(){
+  	return this.name;
+  }
+
+  set prop(x){
+  	this.name=x;
+  }
+
+
+}
+
+mycar = new Car("Ford");
+mycar.prop="BMW V8";
+
+document.getElementById("demo").innerHTML = mycar.prop;
+</script>
+
+</body>
+</html>

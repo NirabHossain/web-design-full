@@ -1,0 +1,31 @@
+.head,.foot{
+	height: 50px;
+	padding: 10px;
+	width: 100%;
+	background-color: dodgerblue;
+	text-align: center;
+	color: white;
+	margin: 10px 0;
+}
+
+.contain> div {
+	float: left;
+	padding: 10px;
+	text-align: center;
+	width: 25%;
+}
+
+.contain:after{
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.contain>div:last-child{
+	border-right: none;
+}
+
+*{
+	box-sizing: border-box;
+}
+

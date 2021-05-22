@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nodes</title>
+</head>
+<body>
+
+<h2>Creating HTML elements with JS</h2>    
+
+<div id="a1" style="padding: 20px; background-color: chartreuse; margin: 0;">
+    <p id="b1">This is a paragraph</p>
+    <p id="b2">This is another paragraph</p>
+</div>
+
+
+
+
+<script>
+
+var con=document.getElementById('a1');
+var p1=document.createElement('p');
+var node=document.createTextNode("My name is Md. Nirab Hossain");
+p1.appendChild(node);
+//con.appendChild(p1);
+
+var x=document.getElementById('b2');
+var y=document.getElementById('b1');
+con.insertBefore(p1,x);
+//con.replaceChild(x,y);
+//x.remove();
+
+</script>
+
+
+</body>
+
+</html>

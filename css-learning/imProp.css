@@ -1,0 +1,69 @@
+.d1{
+	position: relative;
+	width: 50%;
+}
+.im1{
+	width: 100%;
+	border:1px solid black;
+	border-radius: 50%;
+}
+
+.p1{
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border:1px solid red;
+	padding: 5px;
+	background-color: white;
+}
+
+.d1:hover .im1{
+	opacity: .23;
+	transition: 2s;
+}
+.d1 .p1 a{
+	text-decoration: none;
+}
+
+.d1:hover .p1{
+	opacity: 1;
+	transition: 5s;
+}
+
+
+
+
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+
+.lef{
+	position: relative;
+	width: 50%;
+}
+
+.im3{
+	position: absolute;
+	width: 100%;
+}
+
+.hid{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow: hidden;
+	
+}

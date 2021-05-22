@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrow function</title>
+</head>
+<body>
+
+<h2>JS functions</h2>
+
+<p>This example shows the syntax of a function without the use of arrow function syntax</p>
+
+<p id="d1"></p>
+<p id="d2"></p>
+<p id="d3"></p>
+
+<button id="btn">Click Me!</button>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+var hello;
+
+hello = function() {
+  document.getElementById("demo").innerHTML += this;
+}
+
+//The window object calls the function:
+window.addEventListener("load", hello);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+
+
+
+
+
+
+//Arrow Function:
+hello = () => {
+  document.getElementById("demo2").innerHTML += this;
+}
+
+//The window object calls the function:
+window.addEventListener("load", hello);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello); 
+</script>
+
+
+</script>
+
+</body>
+</html>
+
+

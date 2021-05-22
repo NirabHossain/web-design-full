@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mouse over</title>
+</head>
+<body>
+
+<div style="background-color: #D94A38;width: 200px; height: 100px; padding: 40px; font-size: 20px;" onmouseover="over(this)" onmouseout="out(this)" onmousedown="down(this)" onmouseup="up(this)">
+
+	Mouse Over me
+</div>
+
+<script type="text/javascript">
+	function over(obj){obj.innerHTML="Thank you";}
+	function out(obj){obj.innerHTML="Mouse over me again";}
+	function down(obj){obj.innerHTML="Rlease me";}
+	function up(obj){obj.innerHTML="Thank you again";}
+</script>
+
+</body>
+</html>

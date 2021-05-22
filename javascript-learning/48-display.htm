@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Properties</title>
+</head>
+<body>
+
+<p id="d1"></p>
+<p id="d2"></p>
+<p id="d3"></p>
+<p id="d4"></p>
+
+
+<script type="text/javascript">
+	var x={a1:"Md. Nirab",a2:"Hossain",a3:36},y=Object.values(x),z=JSON.stringify(x);
+
+	document.getElementById('d1').innerHTML=x;
+	document.getElementById('d2').innerHTML=y;
+	document.getElementById('d3').innerHTML=z;
+
+	var arr = ["John", "Peter", "Sally", "Jane"];
+
+	var myString = JSON.stringify(arr);
+	document.getElementById("d4").innerHTML = myString;
+
+</script>
+
+</body>
+</html>

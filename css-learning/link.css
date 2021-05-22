@@ -1,0 +1,18 @@
+ol{
+	padding:20px;
+	background-color: tomato;
+}
+
+ul{
+	padding:20px;
+	background-color: lightblue;
+}
+ol li{
+	background:floralwhite;
+	margin-left: 35px;
+}
+ul li{
+	background:floralwhite;
+	margin: 35px;
+}
+

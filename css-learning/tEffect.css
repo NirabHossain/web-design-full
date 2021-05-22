@@ -1,0 +1,48 @@
+@font-face {
+   font-family: myFirstFont;
+   src: url(https://www.w3schools.com/css/sansation_light.woff);
+}
+
+* {
+   font-family: myFirstFont;
+}
+
+
+		p.t1{
+			white-space: nowrap;
+			width: 200px;
+			border:1px solid black;
+			overflow: hidden;
+			text-overflow: clip;
+		}
+		p.t2{
+			white-space: nowrap;
+			width: 200px;
+			border:1px solid black;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+		p.t3{
+			width: 11em; 
+			border: 1px solid #000000;
+			word-wrap: break-word;
+		}
+		p.t4{
+			width: 140px; 
+			border: 1px solid #000000;
+			word-break: keep-all;
+		}
+		p.t5{
+			width: 140px; 
+			border: 1px solid #000000;
+			word-break: break-all;
+		}
+		p.t6{
+			writing-mode: horizontal-tb;
+		}
+		span.t7{
+			writing-mode: vertical-lr;
+		}
+		p.t8{
+			writing-mode: vertical-rl;
+		}

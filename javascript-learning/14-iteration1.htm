@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iteration</title>
+</head>
+<body>
+
+<h2>Iteration Array.forEach()</h2>
+
+<p id="d1"></p>
+<p id="d2"></p>
+<p id="d3"></p>
+<p id="d4"></p>
+<p id="d5"></p>
+<script type="text/javascript">
+	var txt="", num=[45, 4, 9, 16, 25], num2=num.map(func2), num3 = num.filter(func3), sum=num.reduce(func4);
+
+
+	num.forEach(func);
+	document.getElementById('d1').innerHTML="Original array: "+num;
+	document.getElementById('d2').innerHTML=txt;
+	document.getElementById('d3').innerHTML="Multiply by 2: "+num2;
+	document.getElementById('d4').innerHTML="over 18: "+num3;
+	document.getElementById('d5').innerHTML="Total: "+sum;
+
+
+	function func(val){
+		txt=txt+val+"<br>";
+	}
+
+	function func2(val){
+		return val*2;
+	}
+
+	function func3(val) {
+	  return val > 18;
+	} 
+	function func4(total,val){
+		return total+val;
+	}
+
+</script>
+
+
+</body>
+</html>

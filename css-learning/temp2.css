@@ -1,0 +1,50 @@
+*{
+	box-sizing: border-box;
+}
+.contain{
+	display: flex;
+	background-color: #999;
+	min-height: 200px;
+}
+
+.contain>div{
+	padding: 20px;
+	text-align: center;
+	margin: 4px;
+	background-color: white;
+}
+.head,.foot{
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	background-color: dodgerblue;
+}
+
+.men,.sid{
+	flex: 25%;
+}
+.mai{
+	flex:50%;
+}
+@media screen and (max-width: 700px){
+	.men,.sid{flex: 15%;}
+	.mai{flex:70%;}
+}
+
+@media screen and (max-width: 600px){
+	.big{
+		display: flex;
+	}
+	.head{
+		flex: 25%;
+	}
+	.contain{
+		flex-direction: column;
+	}
+	.foot{display: none;}
+}
+@media screen and (max-width: 500px){
+	.contain{
+		flex-direction: column;
+	}
+}

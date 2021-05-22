@@ -1,0 +1,61 @@
+div{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: relative;	
+}
+
+.a1{
+	animation-name: aa;
+	animation-duration: 10s;
+}
+
+@keyframes aa{
+	from{background-color: red;}
+	to{background-color: yellow;}
+}
+
+
+
+div.a2 {
+  animation-name: bb;
+  animation-duration: 10s;
+}
+
+@keyframes bb{
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+div.a3{
+	animation-name: cc;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-delay: 2s;
+	animation-iteration-count: 4;/*infinite*/
+	animation-direction: alternate-reverse;
+
+	animation-fill-mode: forwards;
+	/*animation-delay: -2s;*/
+}
+
+@keyframes cc{
+	  0% {background-color: red;    left:   0px; top:   0px;}
+	 25% {background-color: yellow; left: 200px; top:   0px;}
+  	 50% {background-color: blue;   left: 200px; top: 200px;}
+ 	 75% {background-color: green;  left:   0px; top: 200px;}
+	100% {background-color: red;   left:   0px; top:   0px;}
+}
+
+div.a4{
+	animation: dd 10s ease 2s 4 alternate-reverse;
+}
+@keyframes dd{
+	  0% {background-color: red;    left:   0px; top:   0px;}
+	 25% {background-color: yellow; left: 200px; top:   0px;}
+  	 50% {background-color: blue;   left: 200px; top: 200px;}
+ 	 75% {background-color: green;  left:   0px; top: 200px;}
+	100% {background-color: red;   left:   0px; top:   0px;}
+}

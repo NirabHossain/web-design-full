@@ -1,0 +1,23 @@
+[class^="top"] {
+  background: yellow;
+}
+
+[class$="test"] {
+  background: red;
+
+ [class|="down"] {
+  background: blue;
+}
+
+[class*="te"] {
+  background: green;
+}
+a[target] {
+  background-color: tomato;
+}
+a[target="_blank"] {
+  background-color: grey;
+}
+[title~="flower"] {
+  border: 5px solid yellow;
+}

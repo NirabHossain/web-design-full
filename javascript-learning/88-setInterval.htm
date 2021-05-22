@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Set interval</title>
+</head>
+<body>
+
+<h2>Set interval</h2>
+
+<p id="demo"></p>
+
+<button onclick="clearInterval(x)">Clear</button>
+
+<script>
+    var x= setInterval(func,1000);
+    function func(){
+        var d=new Date();
+        document.getElementById('demo').innerHTML=d.toLocaleTimeString();
+    }
+</script>
+
+</body>
+</html>

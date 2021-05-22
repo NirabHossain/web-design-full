@@ -1,0 +1,14 @@
+div p.a{
+	background-color: tomato;
+}
+div~p.b{
+	background-color: blue;
+}
+div>p.c{
+	background-color: red;
+}
+div+p.d{
+	background-color: green;
+}
+
+

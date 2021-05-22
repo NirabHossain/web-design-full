@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Name</title>
+</head>
+<body>
+
+<h2>Findingn element by class name</h2>
+
+<p>Hello world!</p>
+<p class="intro">
+	This example demonstrates the <b>getElementsByClassName</b> method.
+</p>
+<p class="intro">DOM is very useful</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var x=document.getElementsByClassName('intro');
+	document.getElementById('demo').innerHTML="It can be surely said that "+x[1].innerHTML;
+</script>
+
+</body>
+</html>

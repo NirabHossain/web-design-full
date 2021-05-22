@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>JSON</title>
+</head>    
+<body>
+
+<h3>Convert a JS object into a JSON string and send it to the server</h3>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+    var obj1={name: "Md. Nirab Hossain", age:23, city:"Dhaka"};
+    var jsn=JSON.stringify(obj1);
+    window.location="https://www.w3schools.com/js/demo_json.php?x="+jsn;
+
+
+    var jsn2='{"name":"Syem Mahmud Nirab", "age":"30", "city": "Dhaka"}';
+    var obj2=JSON.parse(jsn2);
+    document.getElementById('demo').innerHTML=obj2.name;
+
+
+</script>
+
+</body>
+</html>

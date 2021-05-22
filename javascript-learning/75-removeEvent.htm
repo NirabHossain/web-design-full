@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Remove Event</title>
+	<style type="text/css">
+		div{
+			color: white;
+			padding: 50px;
+			background-color: coral;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+
+<h2>JavaScript removeEventListener()</h2>
+
+<div id="contain">
+	<p>
+		This div element has an onmousemove event handler that displays a random number every time you move your mouse inside this orange field.<br><br>
+
+		<button onclick="removeHand()">Remove</button>
+	</p>
+
+	<script type="text/javascript">
+		document.getElementById('contain').addEventListener("mouseover",func1);
+	</script>
+</div>
+
+</body>
+</html>

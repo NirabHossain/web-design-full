@@ -1,0 +1,72 @@
+body{
+	background-color: floralwhite;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	background-color: lightgrey;
+	overflow: hidden;
+}
+
+li{
+	float: left;
+	border-right:1px solid grey;
+}
+li:last-child{
+	border:none;
+}
+
+a{
+	display: block;
+	text-decoration: none;
+	padding:14px 16px;
+	color: green;
+}
+.active{
+	background-color: green;
+	color: white;
+}
+
+a:hover{
+	color: white;
+	background-color: green;
+}
+p{
+	height: 1000px;
+}
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.drophide{
+	display: none;
+	position: absolute;
+	background-color: lightgreen;
+	z-index: 1;
+}
+.drophide a{
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.drophide a:hover{
+	background-color: red;
+}
+
+.dropdown:hover .drophide{
+	display: block;
+}
+
+/*
+li.dropdown{
+	display: inline-block;
+}
+*/
+
+
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Full Name</title>
+</head>
+<body>
+<h2>Here full name can be found by function</h2>
+<p id="d1"></p>
+
+<script type="text/javascript">
+	var x={a1:"Nirab ", a2:"Hossain ", a3:25,
+		fullname:function(){
+			return this.a1+this.a2+this.a3;
+		}
+	};
+	document.getElementById('d1').innerHTML=x.fullname();
+</script>
+
+</body>
+</html>

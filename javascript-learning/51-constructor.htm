@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constructor</title>
+</head>
+<body>
+
+<p id="d1"></p>
+
+<script type="text/javascript">
+	var myFather=new Person("Md. Nirab"," Hossain",50,"blue");
+	document.getElementById('d1').innerHTML=myFather.name();
+
+
+	function Person(a1,a2,a3,a4){
+		this.f=a1;
+		this.l=a2;
+		this.age=a3;
+		this.eye=a4;
+		this.name=function(){return this.f+this.l;}
+	}
+
+</script>
+
+</body>
+</html>

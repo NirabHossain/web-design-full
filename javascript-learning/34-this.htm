@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>This</title>
+</head>
+<body>
+
+<h2>Use of this reference</h2>
+
+<p>In this example, <b>this</b> represents the person object that "owns" the myFunction method.</p>
+
+
+<p id="d1"></p>
+<p id="d5"></p>
+<p id="d4"></p>
+<p id="d3"></p>
+<p id="d2"></p>
+
+<script type="text/javascript">
+	var person={f:"Md. Nirab",l:"Hossain",id:5566,func:function(){return this;}};
+	document.getElementById('d1').innerHTML=person.func();
+</script>
+
+
+</body>
+</html>

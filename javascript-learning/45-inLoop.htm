@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>In loop</title>
+</head>
+<body>
+
+<p id="d1"></p>
+
+<script type="text/javascript">
+	var y={name1:"Md. ",name2:"Nirab ", name3:"Hossain ", age: 25},txt="";
+	y.nation=" Bangladesh";
+	delete y.name1;
+	for(x in y){
+		txt+=y[x];
+	}
+	document.getElementById('d1').innerHTML=txt;	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nested function</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+	document.getElementById('demo').innerHTML=add();
+	function add(){
+		var i=0;
+		function plus(){
+			i++;
+		}
+		plus();	plus();	plus();
+		return i;
+	}
+</script>
+
+</body>
+</html>

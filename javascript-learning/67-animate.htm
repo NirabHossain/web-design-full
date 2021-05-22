@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My animation</title>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+</head>
+<body>
+
+<p><button onclick="myMove()">Move</button></p>
+
+<div id="contain">
+	<div id="animate"></div>
+</div>
+
+<script type="text/javascript">
+	function myMove(){
+		var elem=document.getElementById('animate'),pos=0,id=setInterval(frame,5);
+		function frame(){
+			if(pos==350)clearInterval(id);
+			else{
+				pos++;
+				elem.style.top=pos+"px";
+				elem.style.left=pos+"px";
+			}
+		}
+	}
+</script>
+
+
+</body>
+</html>

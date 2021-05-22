@@ -1,0 +1,21 @@
+.a1{grid-area: header;}
+.a2{grid-area: menu;}
+.a3{grid-area: main;}
+.a4{grid-area: side;}
+.a5{grid-area: footer;}
+
+.contain{
+	display: grid;
+	grid-template-areas: 
+	'header header header header header header'
+	'menu   main   main   main   side   side  '
+	'menu   footer footer footer footer footer';
+	grid-gap: 10px;
+	background-color: #2196F3;
+	padding: 10px;
+}
+
+.contain>div{
+	padding: 10px;
+	background-color: rgba(255, 255, 255, .6);
+}

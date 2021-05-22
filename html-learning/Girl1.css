@@ -1,0 +1,52 @@
+body {
+  background-color: FloralWhite;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: blue;
+  font-family: verdana;
+  font-size: 100%;
+}
+p  {
+  color: red;
+  font-family: courier;
+  font-size: 90%;
+  border: 1px solid powderblue;
+  margin: 50px;
+  padding: 50px;
+}
+
+#p01 {
+  color: blue;
+}
+p.error {
+  color: red;
+}
+
+
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}

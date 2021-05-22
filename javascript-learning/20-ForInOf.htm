@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>For In Of</title>
+</head>
+<body>
+
+<h2>For In Of Statement</h2>
+
+<p id="d1"></p>
+<p id="d2"></p>
+<p id="d3"></p>
+
+<script type="text/javascript">
+
+	var txt='',txt2='', x, person={f:"Md. Nirab",l:"Hossain",age:22}, cars=['BMW', 'VOLVO', 'Mini'], txt3='';
+	for(x in person){
+		txt+=person[x]+" ";
+	}
+	document.getElementById('d1').innerHTML=txt;
+
+
+	for(x of cars){
+		txt2+=x+" ";
+	}
+	document.getElementById('d2').innerHTML=txt2;
+
+	for(x of txt){
+		txt3+=x+" "
+	}
+
+	document.getElementById('d3').innerHTML=txt3;
+
+
+</script>
+
+</body>
+</html>
+
+

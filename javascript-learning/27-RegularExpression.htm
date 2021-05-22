@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><title>Regular Expression</title></head>
+<body>
+
+<p>Click the button to do a global search for the character "h" in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+function myFunction() {
+  var str = "His this all there is?";
+  var result1 = str.match(/[h]/g);
+  var result2 = str.match(/[h]/i);
+  var result3 = str.match(/[h]/m);
+  document.getElementById("demo1").innerHTML = result1;
+  document.getElementById("demo2").innerHTML = result2;
+  document.getElementById("demo3").innerHTML = result3;
+}
+</script>
+
+</body>
+</html>

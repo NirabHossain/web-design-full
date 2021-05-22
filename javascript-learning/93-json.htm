@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Save Receive</title>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<script>
+    var obj3={name:"Nirab", Last:"Hossain"};
+    var jsn3=JSON.stringify(obj3);
+    localStorage.setItem("testJSON",jsn3);
+
+    text=localStorage.getItem("testJSON");
+    obj4=JSON.parse(text);
+    document.getElementById('demo').innerHTML=obj4.name;
+</script>
+
+</body>
+</html>

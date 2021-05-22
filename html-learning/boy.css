@@ -1,0 +1,74 @@
+h1{color: blue;}
+h2{color: blue;}
+h3{color: blue;}
+h4{color: blue;}
+h5{color: blue;}
+h6{color: blue;}
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: left;
+  border-spacing: 5px;
+}
+
+table#t01 {
+  width: 100%;
+  background-color: #ff0000;
+}
+table#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+table#t01 th {
+  color: white;
+  background-color: black;
+}
+
+.cities {
+  background-color: tomato;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+} 
+span.note {
+  font-size: 220%;
+  color: red;
+}
+
+
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

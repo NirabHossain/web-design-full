@@ -1,0 +1,81 @@
+body{
+	height: 1000px;
+}
+.but1{
+	border:1px solid white;
+	background-color: green;
+	color:white;
+	padding: 14px 16px;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 50%;
+	width: 100px;
+}
+.but1:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);	
+}
+
+.contain{
+	position: relative;
+	width: 50%;
+}
+
+img{
+	width: 100%;
+}
+
+.but2{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+/*%%%%%%%Button 3%%%%%%%%%*/
+.but1 span{
+	position: relative;
+	transition: .5s;
+}
+.but1 span:after{
+	content: '\00bb';
+	position: absolute;
+	top: 0;
+	right: -10px;
+	transition: .5s;
+	opacity: 0;
+}
+
+.but1:hover span{
+	padding-right: 25px;
+}
+.but1:hover span:after{
+	opacity: 1;
+	right: 0;
+}
+
+
+.but4{
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+
+	color: #fff;
+	background-color: lightgreen;
+	border:none;
+	border-radius: 50%;
+	box-shadow: 0 9px #999;
+}
+
+.but4:hover{
+	background-color: green;
+}
+.but4:active{
+	background-color: blue;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}

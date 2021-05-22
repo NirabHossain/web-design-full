@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Class</title>
+</head>
+<body>
+
+<h2>JavaScript Class</h2>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+	class Car{
+		constructor(brand){
+			this.carname=brand;
+		}
+
+		pres(x){
+			return x+", I have a "+this.carname;
+		}
+		static hello(){
+			return "<br>"+"Hello!!";
+		}
+	}
+	myCar=new Car("Ford");
+	document.getElementById('demo').innerHTML=myCar.pres("Hlw world")+Car.hello();
+</script>
+
+</body>
+</html>

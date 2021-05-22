@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Object</title>
+</head>
+<body>
+
+<h2>Javascript Object</h2>
+<p id="data"></p>
+
+<script type="text/javascript">
+	var person={
+		firstName: "Md. Nirab ",
+		 lastName: "Hossain",
+		      age: 50,
+		 eyeColor: "black",
+		 fullName: function(){return this.firstName+this.lastName;}
+	};
+
+	document.getElementById('data').innerHTML=person.firstName+"is "+ person["age"]+ " years old ";
+//	document.getElementById('data').innerHTML=person.fullName();
+
+</script>
+
+
+</body>
+</html>
